@@ -59,6 +59,7 @@ for op in arreglo:
         servicios+='Lavado de tapiz,'
 
 servicios = servicios[:-1]
+
 estado=''
 val=False
 while(val==False):
@@ -66,7 +67,7 @@ while(val==False):
     print('1.-Trabajando')
     print('2.-Terminado')
     print('3.-Entregado')
-    estado_int = int(input(''))
+    estado_int = int(input('Seleccione opción: '))
     if estado_int==1:
         estado='Trabajando'
         val=True
@@ -84,6 +85,7 @@ print('|\t\t SERVICIO AUTOMOTRIZ \t\t|')
 print('---------------------------------------------------------')
 print(f'Cliente: {nombre_completo}')
 print(f'Servicios: {servicios}')
-print(f'Cantidad: {len(arreglo)-1}')
-print(f'Timpo de espera: {tiempo}')
+print(f'Cantidad: {len(arreglo)-1} servicios')
+print(f'Timpo de espera: {tiempo} hrs')
 print(f'Estado: {estado}')
+print('\n\n')
